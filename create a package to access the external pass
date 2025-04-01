@@ -1,0 +1,18 @@
+public class MainClass {
+    public static void main(String[] args) {
+        InternalClass internalObj = new InternalClass();
+        internalObj.displayInternal();
+        ExternalClass externalObj = new ExternalClass();
+        externalObj.displayExternal();
+    }
+}
+class InternalClass {
+    public void displayInternal() {
+        System.out.println("This is an internal class from the same package.");
+    }
+}
+class ExternalClass {
+    public void displayExternal() {
+        System.out.println("This is an external class from another package.");
+    }
+}
