@@ -1,0 +1,19 @@
+
+class Person {
+    public String name; 
+    public Person(String name) {
+        this.name = name;
+    }
+    public void display() {
+        System.out.println("Name: " + name);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Person p1 = new Person("Alice");
+        System.out.println("Before Modification: " + p1.name);
+        p1.name = "Bob"; 
+        System.out.println("After Modification: " + p1.name);
+        p1.display();
+    }
+}
